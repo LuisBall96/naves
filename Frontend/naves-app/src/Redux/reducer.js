@@ -12,16 +12,6 @@ const initialState = {
         };
       }
   
-      case "BUSCAR_POR_NOMBRE": {
-        return {
-          ...state,
-          copianaves:
-            action.payload === "No existen naves con ese nombre"
-              ? (alert("No existen naves con ese nombre"),
-                [...state.naves])
-              : action.payload,
-        };
-      }
   
       default:
         return {

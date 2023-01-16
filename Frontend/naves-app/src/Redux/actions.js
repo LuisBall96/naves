@@ -20,7 +20,7 @@ export function BUSCAR_POR_NOMBRE(nombre) {
     };
   }
 
-  export function CREAR_VIDEOGAME(payload) {
+  export function CREAR_NAVE(payload) {
     return async function () {
       let url = await axios.post("http://localhost:3001/crearNave", payload);
       return url;

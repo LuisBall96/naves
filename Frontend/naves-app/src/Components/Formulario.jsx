@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { CREAR_VIDEOGAME } from "../Redux/actions";
+import { CREAR_NAVE } from "../Redux/actions";
 import { useHistory, Link } from "react-router-dom";
 import estilos from "../Estilos/Formulario.module.css";
 
@@ -31,8 +31,8 @@ export default function Formulario() {
     const naveCreada = {
       ...nave,
     };
-    dispatch(CREAR_VIDEOGAME(naveCreada));
-    alert("Videojuego creado con exito!");
+    dispatch(CREAR_NAVE(naveCreada));
+    alert("Nave creada con exito!");
     setTimeout(() => {
       history.push("/home");
     }, 1000);
