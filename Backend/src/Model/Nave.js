@@ -20,7 +20,7 @@ const Nave = sequelize.define('naves',{
         type: DataTypes.INTEGER
     },
     tipoRecorrido:{
-        type: DataTypes.ENUM('lunar', 'interplanetario', 'corteza terrestre')
+        type: DataTypes.STRING
     }
 });
 
