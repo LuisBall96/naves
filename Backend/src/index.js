@@ -1,8 +1,9 @@
+//Traigo sequelize y la conexión de la base de datos
 const app = require ("./app.js");
 const sequelize = require("./db/database.js");
 
 
-
+//Arranco el servidor
 async function main (){
     try {
         await sequelize.sync({force: false});

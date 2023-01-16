@@ -3,7 +3,7 @@ const Nave = require("../Model/Nave.js");
 const traerUnaNave = async (req,res) => {
     try {
         const {id} = req.params;
-        const naves = await Nave.findOne({
+        const naves = await Nave.findOne({ //método de sequelize 
             where: {
                 id
             }

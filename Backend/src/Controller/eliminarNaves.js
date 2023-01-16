@@ -3,9 +3,9 @@ const Nave = require ('../Model/Nave.js')
 
 const eliminarNave = async (req, res) => {
 try {
-    const {id} = req.params
-    const eliminarNave = await Nave.destroy({ 
-        where:{
+    const {id} = req.params //Traigo por medio del params '/' el current id
+    const eliminarNave = await Nave.destroy({ //método de sequelize
+        where:{ //Elimina la nave -cuyo- ID sea...
             id
         }
     });
@@ -19,4 +19,4 @@ try {
 
 
 
-module.exports = eliminarNave
+module.exports = eliminarNave //para modularizar

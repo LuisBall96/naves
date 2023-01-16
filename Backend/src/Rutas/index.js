@@ -6,7 +6,7 @@ const traerUnaNave = require("../Controller/traerUnaNave");
 
 const router = Router();
 
-
+//Rutas
 router.get("/nave",traerNaves);
 router.get("/nave/:id", traerUnaNave)
 router.post("/crearNave", crearNaves);
